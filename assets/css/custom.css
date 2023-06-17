@@ -1,0 +1,473 @@
+@font-face {
+    font-family: kalameh;
+    src: url(../fonts//KalamehWebFaNum-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: kalameh;
+    src: url(../fonts/KalamehWebFaNum-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: kalameh;
+    src: url(../fonts//KalamehFaNum-Regular.ttf) format("truetype");
+}
+body {
+    user-select: none;
+    font-family: "kalameh";
+}
+
+body.active {
+    overflow: hidden;
+}
+.login-Register{
+    height: 100vh;
+    background-image: url('../img/1644981800-car-on-great-ocean-road.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.login-Register .row{
+    box-shadow: 0 0 20px -2px #12416b;
+}
+header {
+    position: sticky;
+    top: 0;
+    border-radius: .3rem;
+    z-index: 99;
+}
+.socials > div{
+    color: white;
+}
+header>div>ul>li a,
+footer ul li a,
+.reserve,a.custom-primary-bg,
+.socials a,.socials > div > div,.langs li,#magazine .row img{
+    transition: all .4s;
+}
+#langs {
+    top: 29px;
+    display: none;
+ }
+#langs.active,.login:hover form{
+    display: block;
+ }
+#langs li,input[type='submit'] {
+    transition: all .4s;
+ }
+
+#langs li:hover {
+    background-color: #e9ecef !important;
+ }
+
+header>div>ul>li:hover a,
+header>div>ul>li.active a,
+.socials a:hover,
+footer ul li:hover a,.socials > div > div:hover {
+    color: #5985ac !important;
+}
+
+.dropdown-item.active {
+    background-color: #aed7fc !important;
+ }
+#hamIcon {
+    transition: all .5s;
+    border-radius: 100%;
+    background-color: #12416b;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    cursor: pointer;
+    right: 10px;
+    top: 23px;
+    z-index: 110;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#hamIcon span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: auto;
+    background-color: white;
+    transition: all .5s;
+    margin-bottom: 5px;
+}
+
+#hamIcon.active>div span:first-child,.login form {
+    display: none;
+}
+
+#hamIcon.active>div span:nth-child(2) {
+    transform: rotate(42deg) translateX(2px)translateY(3px);
+    background-color: #ffc107;
+}
+
+#hamIcon.active>div span:last-child {
+    transform: rotate(-44deg) translateX(3px)translateY(-3px);
+    background-color: #ffc107;
+}
+
+/* background */
+.custom-primary-bg {
+    background-color: #12416b;
+}
+
+.custom-secondary-bg {
+    background-color: #45749d;
+}
+
+.custom-gray-bg {
+    background-color: #e6e6e6 !important;
+}
+
+.custom-info-bg {
+    background-color: #a2d0dccf;
+}
+
+.custom-success-bg {
+    background-color: #28a40e;
+    transition: all .4s;
+}
+
+/* text */
+.custom-primary-text {
+    color: #12416b;
+}
+
+/* border */
+.border-custom {
+    border: 1px solid #12416b;
+}
+
+/* utility */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* rounded */
+.rounded-4 {
+    border-radius: 1.3rem !important;
+}
+
+/* width */
+
+.w-20 {
+    width: 20px;
+} 
+.w-80 {
+    width: 85%;
+}
+.w-92 {
+    width: 92px;
+}
+.w-146 {
+    width: 146px;
+}
+.w-210 {
+    width: 210px;
+}
+.w-255{
+    width: 255px;
+}
+.w-290{
+    width: 290px;
+}
+.w-400{
+    width: 400px;
+}
+.w-618 {
+    width: 618px;
+}
+
+/* gap */
+.gap-6 {
+    gap: 6rem;
+}
+
+/* shadow */
+.shadow-custom {
+    box-shadow: 0px 4px 9px black;
+}
+
+/* css styles */
+#searchBox {
+    background-image: url('../img/photo_2023-06-01_13-14-07.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 73vh;
+    margin-top: -91px;
+    padding-top: 103px;
+}
+.daterangepicker .drp-buttons .btn{
+    background-color: #12416b!important;
+    color: white!important;
+}
+.iconBox {
+    width: 104px;
+    height: 104px;
+    box-shadow: none;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.iconBox:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 9px #45749d;
+}
+
+#our-center a {
+    width: 400px;
+    box-shadow: 0 4px 9px #45749d;
+    transition: all .4s;
+}
+
+#our-center a:hover {
+    margin-top: -12px;
+}
+
+#our-center span {
+    bottom: 19px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: inline-table;
+    padding: 2px 35px;
+    border-radius: 5px
+}
+
+#popular-cars {
+    margin-top: 293px;
+}
+
+.custom-after::after {
+    content: '';
+    background-color: #45749d;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    bottom: -11px;
+}
+
+.detailscarDetailsIcon {
+    width: 70px;
+}
+
+.custom-success-bg img {
+    width: 14px;
+}
+
+.servicesImg {
+    height: 66px;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 219px!important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #12416b!important;
+}
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after,
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 17px !important;
+    color: #12416b;
+}
+
+a.custom-primary-bg:hover,
+input[type='submit']:hover,
+.reserve:hover {
+    transform: scale(.9);
+}
+
+.accardionContent {
+    max-height: 0;
+    transition: all .5s;
+    overflow: hidden;
+    padding: 0 19px !important;
+}
+
+.accardionContent.active {
+    padding: 19px !important;
+    max-height: 2000px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+}
+
+.accardionBtn.active {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 26px !important;
+    border-top-right-radius: 26px !important;
+}
+
+.accardionBtn svg {
+    transition: all .5s;
+    color: #12416b;
+}
+
+.accardionBtn svg.active {
+    transform: rotate(180deg);
+}
+#questions img{
+    width: 31%;
+}
+#statistics img {
+    height: 99px;
+}
+
+#madarek h2 {
+    width: 357px;
+}
+#contact h2 {
+    width: 149px;
+}
+#madarek .order-0.order-lg-1,#contact .order-0.order-lg-2{
+    background-image: url('../img/28997029_car_rental_web_banner_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.filters{
+    position: sticky;
+    top: 119px;
+}
+.filterBtn.active{
+   background-color: #45749d!important;
+   color: white;
+  }
+.filterContent{
+    max-height: 0;
+    padding: 0 1rem;
+    transition: all .4s;
+    overflow: hidden;
+  }
+.filterContent.active{
+  max-height: 1000px;
+  padding: 1rem 1rem;
+}
+/* lightbox */
+
+.card-img-overlay{
+    padding: 0 30%;
+    background-clip: content-box;
+    transition-duration: 0.3s;
+}
+
+.card-img-overlay:hover{
+    background-color: rgba(0 , 0 , 0 , 0.5);
+    padding: 0 0;
+}
+
+.card-img-overlay a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: 30% 8px;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    line-height: 2.1em;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+
+.card-img-overlay:hover a{
+    opacity: 1;
+}
+
+.card-img-overlay a:hover{
+    background-color: #45749d;
+}
+#magazine .row:hover img{
+transform: scale(1.1);
+}
+#magazine .col-xl-4.col-lg-3 span{
+    z-index: 3;
+   }
+footer {
+    background-image: url('../img/pngwing.com\ \(4\).png');
+    background-attachment: fixed;
+    background-size: 42%;
+    background-position: 34px 481px;
+    background-repeat: no-repeat;
+}
+
+.footerOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: #12416bcc;
+}
+
+@media only screen and (max-width: 992px) {
+
+    #hamIcon {
+        display: flex;
+    }
+    #overlay{
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.433);
+        z-index: 92;
+        transition: all .4s;
+        width: 0;
+        margin-right: auto;
+    }
+    #overlay.active,.w-400{
+        width: 100%;
+    }
+    header {
+        width: 100%!important;
+        border-radius: 0;
+    }
+    header > div > ul {
+        position: fixed;
+        right: -270px;
+        bottom: 0;
+        top: 0;
+        width: 240px !important;
+        z-index: 99;
+        transition: all .5s;
+    }
+
+    header > div > ul.active {
+        right: 0;
+    }
+
+    header > div > ul {
+        line-height: 44px;
+    }
+
+    #searchBox {
+        margin-top: 0;
+        height: 100vh;
+        padding-top: 0;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    .w-618 {
+        width: auto;
+    }
+    #popular-cars {
+        margin-top: 593px;
+    }
+
+    footer {
+        background-attachment: scroll;
+        background-size: 77%;
+        background-position: center;
+    }
+}
